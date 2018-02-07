@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="ResourceBase" Abstract="True" Name="PenguinWoolBase">
+    <graphicData>
+      <texPath>Things/Item/Resource/Wool</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>60</MaxHitPoints>
+      <MarketValue>7.0</MarketValue>
+      <Mass>0.005</Mass>
+      <Flammability>0.5</Flammability>
+      <DeteriorationRate>1</DeteriorationRate>
+    </statBases>
+    <stackLimit>100</stackLimit>
+    <stuffProps>
+      <categories>
+        <li>Fabric</li>
+      </categories>
+      <commonality>0.15</commonality>
+      <statFactors>
+        <ArmorRating_Sharp>1.1</ArmorRating_Sharp>
+        <ArmorRating_Blunt>1.1</ArmorRating_Blunt>
+        <ArmorRating_Heat>1.1</ArmorRating_Heat>
+        <ArmorRating_Electric>1.2</ArmorRating_Electric>
+        <Insulation_Cold>1.5</Insulation_Cold>
+        <Insulation_Heat>1.2</Insulation_Heat>
+      </statFactors>
+    </stuffProps>
+    <thingCategories>
+      <li>Textiles</li>
+    </thingCategories>
+  </ThingDef>
+  <ThingDef ParentName="PenguinWoolBase">
+    <defName>PenguinWool</defName>
+    <label>Penguin wool</label>
+    <description>Penguin wool. It's Useful.</description>
+    <graphicData>
+      <color>(45,45,45)</color>
+    </graphicData>
+    <stuffProps>
+      <color>(45,45,45)</color>
+      <commonality>0.15</commonality>
+      <statOffsets>
+        <Insulation_Cold>-25</Insulation_Cold>
+        <Insulation_Heat>10</Insulation_Heat>
+      </statOffsets>
+    </stuffProps>
+  </ThingDef>
+</Defs>
